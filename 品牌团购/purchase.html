@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>品牌团购</title>
+    <link rel="icon" href="img/title.ico">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/purchase.css">
+</head>
+<body>
+<div id="header" class="clear">
+    <div class="main">
+        <div class="home">
+            <a href="../蘑菇街-主页/index.html">
+                <img src="img/MGJ-XBT_03.png" alt="">
+                蘑菇街首页
+            </a>
+        </div>
+        <div class="Sign">
+            <ul class="clear">
+                <li class="margin1">
+                    <a href="" class="border">登录</a>
+                </li>
+                <li class="margin2">
+                    <a href="" class="border">
+                        <img src="img/MGJ-XBT_07.png" alt="" class="point1">
+                        我的订单
+                    </a>
+                </li>
+                <li class="margin3">
+                    <a href="" class="border">
+                        <img src="img/MGJ-XBT_08.png" alt="" class="point3">
+                        购物车
+                    </a>
+                    <div id="cart">购物车里没有任何商品！</div>
+                </li>
+                <li class="margin4">
+                    <a href="" class="border">
+                        客户服务
+                        <img src="img/MGJ-XBT_09.png" alt="" class="point2">
+                        <!--等会-->
+                    </a>
+                    <div id="service">
+                        <div><a href="">消费者服务</a></div>
+                        <div><a href="">商家服务</a></div>
+                        <div><a href="">规则中心</a></div>
+                    </div>
+                </li>
+                <li class="margin5">
+                    <a href="" class="border">
+                        <img src="img/MGJ-XBT_10.png" alt="">
+                        商家后台
+                        <img src="img/MGJ-XBT_09.png" alt="" class="point2">
+                        <!--等会-->
+                    </a>
+                    <div id="Backstage">
+                        <div><a href="">管理后台</a></div>
+                        <div><a href="">商家社区</a></div>
+                        <div><a href="">商家培训</a></div>
+                        <div><a href="">市场入驻</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="header-1" class="clear">
+    <div class="main-mgj" onclick="window.location.href = '../蘑菇街-主页/index.html'">
+        <img src="img/header-1.png" alt="" class="img-1">
+        <div class="search">
+            <div class="search_content">
+                <div class="search_outer_box">
+                    <!--真正的搜索框-->
+                    <div class="search_inner_box">
+                        <div class="select_box">
+                            <span class="selected">搜商品</span>
+                            <i></i>
+                            <ul >
+                                <li><a href="#">商品</a></li>
+                                <li><a href="#">店铺</a></li>
+                            </ul>
+                        </div>
+                        <form action="">
+                            <input type="text" class="search_txt" placeholder="卫衣">
+                            <input type="submit" class="search_botton" value="搜  索">
+                            <input type="hidden">
+                        </form>
+                        <div class="search_hidden">
+                            <div class="search_hidden_inner" >
+                                <h3 class="search_hidden_title">
+                                    历史纪录
+                                    <span class="del_all">删除</span>
+                                </h3>
+                                <ul>
+                                    <li class="history_item">
+                                        <a href="javascript:;">牛仔裤</a>
+                                        <a class="del_logo">×</a>
+                                    </li><li class="history_item">
+                                    <a href="javascript:;">外套</a>
+                                    <a class="del_logo">×</a>
+                                </li><li class="history_item">
+                                    <a href="javascript:;">毛衣</a>
+                                    <a class="del_logo">×</a>
+                                </li><li class="history_item">
+                                    <a href="javascript:;">卫衣</a>
+                                    <a class="del_logo">×</a>
+                                </li><li class="history_item">
+                                    <a href="javascript:;">袜子</a>
+                                    <a class="del_logo">×</a>
+                                </li><li class="history_item">
+                                    <a href="javascript:;">篮球鞋</a>
+                                    <a class="del_logo">×</a>
+                                </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--商品小列表-->
+                    <div class="search_bottom_list">
+                        <a href="javascript:;" class="select">睡衣</a>
+                        <a href="javascript:;">牛仔裤</a>
+                        <a href="javascript:;">风衣</a>
+                        <a href="javascript:;">连衣裙</a>
+                        <a href="javascript:;" class="select">卫衣</a>
+                        <a href="javascript:;">袜子</a>
+                        <a href="javascript:;">外套</a>
+                        <a href="javascript:;" class="select">裤子</a>
+                        <a href="javascript:;">衬衫</a>
+                        <a href="javascript:;" class="select">毛衣</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <img src="img/MGJ-logo2.png" alt="" class="img-2">
+    </div>
+</div>
+<div class="update">
+    <div class="main"><img src="img/pur.png" alt=""></div>
+</div>
+<div class="purchaseBanner main clear">
+    <div class="banner-swiper" id="banner-swiper">
+        <div id="swiper" class="swiper">
+            <img src="img/banner1.png" alt="">
+            <img src="img/banner2.png" alt="">
+        </div>
+        <a href="javascript:;" class="leftBtn"></a>
+        <a href="javascript:;" class="rightBtn"></a>
+    </div>
+    <div class="banner-clothes clear">
+        <a href="javascript:;"><img src="img/clo1.png" alt=""></a><!--
+        --><a href="javascript:;" class="bot"><img src="img/clo2.png" alt=""></a>
+    </div>
+</div>
+<div id="secondParts">
+    <div class="main">
+        <div class="top clear">
+            <div class="leftSide">
+                <div id="countDown" class="clearFix">
+                    <span class="countHour">00</span>
+                    <span class="countDot">:</span>
+                    <span class="countMinute">00</span>
+                    <span class="countDot">:</span>
+                    <span class="countSecond">00</span>
+                </div>
+            </div>
+            <div class="rightSide">
+                <div id="active" class="clear">
+                    <!--<ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/active1.jpg" alt="">
+                            </a>
+                            <div class="describe">
+                                <a href=""><h3>复古毛衣+半身裙子</h3></a>
+                                <span class="left">￥45.00</span>
+                                <span class="right"><del>￥90.00</del></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/active1.jpg" alt="">
+                            </a>
+                            <div class="describe">
+                                <a href=""><h3>复古毛衣+半身裙子</h3></a>
+                                <span class="left">￥45.00</span>
+                                <span class="right"><del>￥90.00</del></span>
+                            </div>
+                    </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="Image/active1.jpg" alt="">
+                            </a>
+                            <div class="describe">
+                                <a href=""><h3>复古毛衣+半身裙子</h3></a>
+                                <span class="left">￥45.00</span>
+                                <span class="right"><del>￥90.00</del></span>
+                            </div>
+                    </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="Image/active1.jpg" alt="">
+                            </a>
+                            <div class="describe">
+                                <a href=""><h3>复古毛衣+半身裙子</h3></a>
+                                <span class="left">￥45.00</span>
+                                <span class="right"><del>￥90.00</del></span>
+                            </div>
+                    </li>
+                    </ul>-->
+                </div>
+                <a href="javascript:;" class="littleLeft"></a>
+                <a href="javascript:;" class="littleRight"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="_black">
+    <div class="main">
+        <div class="shopList_hd clear">
+            <div class="shopListTitle">
+                <span></span>品牌好店
+            </div>
+            <a href="###"> <div class="shopListRed">
+                查看更多品牌&gt
+            </div></a>
+        </div>
+        <div class="shopList_ban clear">
+            <ul>
+                <li>
+                    <img src="img/ban1.png" alt="">
+                    <div class="shopList_ban_Info">
+                        <div class="shop-item-title" >一叶子</div>
+                        <div class="shop-item-desc">鲜肌膜力水润入秋</div><div class="shop-item-promotion">满79减10</div>
+                    </div>
+                    <a href=""><div class="shopList_ban_Time">
+                        即将结束
+                    </div></a>
+                </li>
+                <li class="noMargin">
+                    <img src="img/ban2.png" alt="">
+                    <div class="shopList_ban_Info">
+                        <div class="shop-item-title" >集香草</div>
+                        <div class="shop-item-desc">满99减20</div>
+                        <div class="shop-item-promotion">满79减10</div>
+                    </div>
+                    <a href=""> <div class="shopList_ban_Time">
+                        即将结束</div></a>
+                </li>
+                <li>
+                    <img src="img/ban3.png" alt="">
+                    <div class="shopList_ban_Info">
+                        <div class="shop-item-title" >阿道夫旗舰店</div>
+                        <div class="shop-item-desc">鲜肌膜力水润入秋</div>
+                        <div class="shop-item-promotion">满79减10</div>
+                    </div>
+                    <a href=""><div class="shopList_ban_Time">
+                        即将结束 </div></a>
+                </li>
+                <li class="noMargin">
+                    <img src="img/ban4.png" alt="">
+                    <div class="shopList_ban_Info">
+                        <div class="shop-item-title" >饰麦麦专营店</div>
+                        <div class="shop-item-desc">相约等候为爱而生</div>
+                        <div class="shop-item-promotion">满79减10</div>
+                    </div>
+                    <a href=""><div class="shopList_ban_Time">
+                        即将结束 </div></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="selectedGoods">
+        <span></span>精选好货
+    </div>
+</div>
+<div class="aside" id="aside">
+    <div class="choice-nav choice-item active">精选</div>
+    <div class="choice-nav choice-item">上衣</div>
+    <div class="choice-nav choice-item">套装</div>
+    <div class="choice-nav choice-item">裙裤</div>
+    <div class="choice-nav choice-item">鞋包</div>
+    <div class="choice-nav choice-item">美妆</div>
+    <div class="choice-nav choice-item">男友</div>
+    <div class="choice-nav choice-item noBorder">生活</div>
+</div>
+
+<!--整体上移的效果-->
+<div id="wcc_main">
+
+
+    <div class="choice main" id="choice">
+        <div class="choice-beauty choice-item active">
+            <span>精选</span>
+        </div>
+        <div class="choice-beauty choice-item">
+            <span>上衣</span>
+        </div>
+        <div class="choice-beauty choice-item">
+            <span>套装</span>
+        </div>
+        <div class="choice-beauty choice-item">
+            <span>裙裤</span>
+        </div>
+        <div class="choice-beauty choice-item">
+            <span>鞋包</span>
+        </div>
+        <div class="choice-beauty choice-item">
+            <span>美妆</span>
+        </div>
+        <div class="choice-beauty choice-item">
+            <span>男友</span>
+        </div>
+        <div class="choice-beauty choice-item">
+            <span>生活</span>
+        </div>
+    </div>
+    <div class="fourParts clearfix" id="fourParts">
+        <div class="main">
+            <div class="like">
+                <ul id="list">
+                    <!--<li>
+                        <div class="lis_top">
+                         img4<img class="img0" simgiimg4/img/like01.png" alt="">
+                        </div>
+                        <a href="">
+                            <p class="content">韩后达人面膜组合20片熬夜控油补水保湿提亮肤色美白旗舰店正品收缩毛孔</p>
+                            <p class="hot">热卖</p>
+                            <div class="lis_bottom">
+                                <span>￥29.9</span>
+                                <del></del>
+                                <div class="collect">
+                             img4<img simgiimg4/img/collect.png" alt=""><p>1102</p></div>
+                            </div>
+                        </a>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer-my">
+    <div id="main-f1">
+        <div class="help">
+            <h3>- 新手帮助 -</h3>
+            <ul>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">自动服务</a></li>
+                <li><a href="">联系客服</a></li>
+                <li><a href="">意见反馈</a></li>
+            </ul>
+
+        </div>
+        <div>
+            <h3>- 权益保障 -</h3>
+            <ul>
+                <li><span>全国包邮</span></li>
+                <li><span>7天无理由退货</span></li>
+                <li><span>退货运费补贴</span></li>
+                <li><span>限时发货</span></li>
+            </ul>
+
+        </div>
+        <div>
+            <h3>- 支付方式 -</h3>
+            <ul>
+                <li><span>微信支付</span></li>
+                <li><span>支付宝</span></li>
+                <li><span>白富美支付</span></li>
+            </ul>
+
+        </div>
+        <div class="footer-ewm">
+            <h3>- 移动客户端下载 -</h3>
+            <ul>
+                <li>
+                    <span>蘑菇街</span>
+                    <img src="img/footer-ewm.png" alt="">
+                </li>
+                <li>
+                    <span>美丽说</span>
+                    <img src="img/footer-ewm.png" alt="">
+                </li>
+                <li>
+                    <span>uni引力</span>
+                    <img src="img/footer-ewm.png" alt="">
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div id="main-f2">
+        <div class="company">
+            <ul>
+                <li><a href="">招聘信息</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">商家入驻</a></li>
+                <li><a href="">商家后台</a></li>
+                <li><a href="">蘑菇商学院</a></li>
+                <li><a href="">商家社区</a></li>
+                <li><a href="">规则中心</a></li>
+                <li><a href="">有害信息举报</a></li>
+                <li><p>©2018 Mogujie.com 杭州卷瓜网络有限公司</p></li>
+            </ul>
+        </div>
+        <div class="footer-tel">
+            <div>
+                <span>营业执照：</span>
+                <a href="">913301065526808764</a>
+            </div>
+            <div>
+                <span>网络文化经营许可证：</span>
+                <a href="">浙网文（2016）0349-219号</a>
+            </div>
+            <div>
+                <span>增值电信业务经营许可证：</span>
+                <a href="">浙B2-20110349</a>
+            </div>
+            <div>
+                <a href="">安全责任书</a>
+            </div>
+            <div>
+                <a href="">浙公网安备 33010602002329号</a>
+            </div>
+            <div>
+                <span>互联网药品信息服务资格证书编号：</span>
+                <a href="">（浙)-经营性-2018-0002</a>
+            </div>
+            <div>
+                <a href="">浙网食A33010003</a>
+            </div>
+            <div>
+                <a href="">出版物网络交易平台服务经营备案证</a>
+            </div>
+            <div>
+                <a href="">（浙）网械平台备字[2018]第00006号</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div id="fixed">
+    <div class="margin-fixed" id="margin-fixed">
+        <div class="height-fixed">
+            <div class="border-fixed-1">
+                <a href="" class="GD-bg1">
+                    <img src="img/MGJ-XBT56_03.png" alt="" class="img-margin-fixed">
+                    <div>购物车</div>
+                </a>
+            </div>
+        </div>
+        <div class="height-fixed">
+            <div class="border-fixed-1">
+                <a href="" class="GD-bg2">
+                    <img src="img/MGJ-XBT3333_03.png" alt="">
+                    <div>优惠券</div>
+                </a>
+            </div>
+        </div>
+        <div class="height-fixed padding-fixed">
+            <div class="border-fixed-1">
+                <a href="" class="GD-bg3">
+                    <img src="img/MGJ-XBT57_09.png" alt="">
+                    <div id="fixed-padding-price">钱包</div>
+                </a>
+            </div>
+        </div>
+        <div class="height-fixed padding-fixed">
+            <div class="border-fixed-1">
+                <a href="" class="GD-bg4">
+                    <img src="img/MGJ-XBT56_06.png" alt="">
+                    <div>足迹</div>
+                </a>
+            </div>
+        </div>
+        <span>
+                <a href="" class="GD-bg5">
+                    <img src="img/MGJ-XBT-99..png" alt="">
+                </a>
+                <div>
+                    <img src="img/123-123.png" alt="">
+                </div>
+        </span>
+        <div class="fixed-top">
+            <div>
+                <a href="">
+                    <img src="img/MGJ-XBT_fixed-top_01_02.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/animate.js"></script>
+<script>
+    let countDown = document.getElementById('countDown');
+    let countHour = countDown.getElementsByClassName('countHour')[0];
+    let countMinute = countDown.getElementsByClassName('countMinute')[0];
+    let countSecond = countDown.getElementsByClassName('countSecond')[0];
+    function checkTime(i) {
+        if(i<10){
+            i='0'+i;
+        }
+        return i;
+    }
+    setInterval(function () {
+        let date = new Date();
+        let year = date.getFullYear();
+        let month = date.getMonth()+1;
+        let day = date.getDate();
+        timeStr = `${year}-${month}-${day} 24:00:00`;
+    },1000);
+    function lastTime() {
+        let nowTime = new Date().getTime();
+        let target = new Date(timeStr) - nowTime;
+        let hour = Math.floor(target%(1000*60*60*24)/(1000*60*60));
+        let minute = Math.floor(target%(1000*60*60*24)%(1000*60*60)/(1000*60));
+        let second = Math.floor(target%(1000*60*60*24)%(1000*60*60)%(1000*60)/1000);
+        hour=checkTime(hour);
+        minute=checkTime(minute);
+        second=checkTime(second);
+        countHour.innerHTML=`${hour}`;
+        countMinute.innerHTML=`${minute}`;
+        countSecond.innerHTML=`${second}`;
+    }
+    setInterval(()=> {
+        lastTime(timeStr);
+    },1000);
+</script>
+<script src="js/purchase.js"></script>
+<script src="js/second.js"></script>
+<script src="js/selectedGoods.js"></script>
+<script src="js/utils.js"></script>
+<script>
+    let fixedtop = document.querySelector('.fixed-top');
+    let marginfixed=document.getElementById('margin-fixed');
+    let winH=document.documentElement.clientHeight||document.body.clientHeight;
+    fixedtop.onclick = function () {
+        let winScroll = util.win('scrollTop');
+        this.timer = setInterval(() => {
+            winScroll -= 100;
+            if (winScroll <= 0) {
+                clearInterval(this.timer);
+                util.win('scrollTop', 0);
+                return;
+            }
+            util.win('scrollTop', winScroll);
+            bok = false;
+        }, 17);
+    };
+    marginfixed.style.marginTop=winH/8+'px'
+</script>
