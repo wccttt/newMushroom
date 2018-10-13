@@ -125,7 +125,7 @@ let fourParts = (function () {
     }
 
 
-    window.onscroll=function () {
+    $(window).scroll(function () {
        var winT=win('scrollTop');
         if(winT>=wcc_main_top){
             choice.style.position='fixed';
@@ -145,14 +145,9 @@ let fourParts = (function () {
             clearInterval(fixedtop.timer)
         }
         bok = true;
-        let winScroll = util.win('scrollTop');
-        let winClient = util.win('clientHeight');
-        if (winScroll >= winClient) {
-            fixedtop.style.display = 'block';
-        } else {
-            fixedtop.style.display = 'none';
-        }
-    };
+
+
+    });
 
     function move() {
         let wcc_timer=setInterval(function () {

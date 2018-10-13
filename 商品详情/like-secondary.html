@@ -2765,43 +2765,27 @@
 <script src="js/utils.js"></script>
 <script src="js/like-secondary.js"></script>
 <script type="text/javascript" charset="UTF-8">
-    window.onload=function () {
-        $search.init();
-        $goodsSort.init();
-    }
+    function sideBottomUp() {
+        let $sideBottom=$('.sideBottom');
+        $(window).scroll(function () {
+            let T = $(window).scrollTop();
+            if(T>0){
+                $sideBottom.css({display:'block'})
+            }
 
+            if(T<=2){
+                $sideBottom.css({display:"none"});
+            }
+        });
+        $sideBottom.on('click',function () {
+            $('html , body').animate({scrollTop: 0});
+
+        })
+    }
+    sideBottomUp();
 
 </script>
-<!--<script>
-    let fixedtop = document.querySelector('.fixed-top');
-    let bok = false;
-    window.onscroll = function () {
-        if (bok) {
-            clearInterval(fixedtop.timer)
-        }
-        bok = true;
-        let winScroll = utils.win('scrollTop');
-        let winClient = utils.win('clientHeight');
-        if (winScroll >= winClient) {
-            fixedtop.style.display = 'block';
-        } else {
-            fixedtop.style.display = 'none';
-        }
-    };
-    fixedtop.onclick = function () {
-        let winScroll = utils.win('scrollTop');
-        this.timer = setInterval(() => {
-            winScroll -= 100;
-            if (winScroll <= 0) {
-                clearInterval(this.timer);
-                utils.win('scrollTop', 0);
-                return;
-            }
-            utils.win('scrollTop', winScroll);
-            bok = false;
-        }, 200);
-    };
-</script>-->
+
 
 
 

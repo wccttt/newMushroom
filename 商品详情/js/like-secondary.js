@@ -30,35 +30,4 @@ for(var i=0;i<lis.length;i++){
     }
 }
 
-let $search=(function () {
-    let  $searchOuter=$('.outer_lock');
-    let $H=$searchOuter[0].offsetHeight;
-    let $sideBottom=$('.sideBottom');
-    let $header=$('header');
-    window.onscroll=function () {
-        let T=window.scrollY;
-        console.log(T);
-        console.log(1);
-        if(T>0){
-            $sideBottom.css({display:'block'})
-        }
-        if(T>=$H){
-            $searchOuter.addClass('outer').removeClass('outer_lock');
-        }else{
-            $searchOuter.addClass('outer_lock').removeClass('outer')
-        }
-        if(T<=2){
-            $sideBottom.css({display:"none"});
-        }
-    };
-    $sideBottom.on('click',function () {
-        $('html , body').animate({scrollTop: 0},'slow');
 
-    });
-
-    return {
-        init:function () {
-
-        }
-    }
-})();

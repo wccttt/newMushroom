@@ -2,10 +2,8 @@ let $search=(function () {
     let  $searchOuter=$('.outer_lock');
     let $H=$searchOuter[0].offsetHeight;
     let $sideBottom=$('.sideBottom');
-    let $header=$('header');
-    window.onscroll=function () {
-        let T=window.scrollTop;
-
+    $(window).scroll(function () {
+        let T=$(window).scrollTop();
         if(T>0){
             $sideBottom.css({display:'block'})
         }
@@ -17,7 +15,7 @@ let $search=(function () {
         if(T<=2){
             $sideBottom.css({display:"none"});
         }
-    };
+    });
     $sideBottom.on('click',function () {
         $('html , body').animate({scrollTop: 0},'slow');
 

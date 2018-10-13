@@ -234,18 +234,16 @@ var $firstBanner = (function () {
     }
 
     function show(){
-        $warp_left.on('mouseenter',function(){
-            $indexPage.addClass('show');
-
-
             $(window).scroll(function(){
                 if($wup.css("display")=='none'){
                     $indexPage.removeClass("show");
-
+                   $warp_left.on('mouseover',function () {
+                       $indexPage.addClass('show');
+                   })
 
                 }
             })
-        })
+
 
         $indexPage.on('mouseleave',function(){
             $indexPage.removeClass("show");
@@ -269,9 +267,7 @@ var $firstBanner = (function () {
 })();
 var secondParts=(function () {
     let active = document.getElementById('active');
-    /*let uls = active.getElementsByTagName('ul');
-     let lis = active.getElementsByTagName('li');
-     let imgs = active.getElementsByTagName('img');*/
+
     let littleLeft=document.getElementsByClassName('littleLeft')[0];
     let littleRight=document.getElementsByClassName('littleRight')[0];
     let data=null;
@@ -643,7 +639,6 @@ var banner = (function (j) {
     let step = 0;
     let stop = 0;
     let dd = 1;
-
     function bindHtml(left, central) {
         let imgStr = ``;
         let imgItr = ``;
@@ -761,7 +756,7 @@ var banner = (function (j) {
             xintian.style.left = 0;
         }
         stop++;
-        animate(xintian, {left: stop * -630}, 300)
+        animate(xintian, {left: stop * -630}, 300);
         focusTip()
     }
 
@@ -868,7 +863,7 @@ var  multiterm=(function () {
 
         }
     }
-    banners()
+    banners();
 
 
     function jshiq() {

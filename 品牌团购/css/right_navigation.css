@@ -1,0 +1,150 @@
+.right_navigation {
+    height: 100%;
+    width: 30px;
+    position: fixed;
+    background: #202020;
+    top: 0;
+    right: 0
+}
+
+.right_navigation .right_navigation_blank {
+    height: 10%;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 30px
+}
+
+.right_navigation .right_navigation_item {
+    position: relative;
+    padding: 4px 4px 0;
+    text-align: center;
+    background: #202020
+}
+
+.right_navigation .right_navigation_item a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+    padding-bottom: 12px
+}
+
+.right_navigation .right_navigation_item a .s_icon {
+    background: url("../../搜索页面/image/search/spirit.png") no-repeat;
+    background-position: -5px;
+    width: 30px;
+    height: 30px;
+    display: block
+}
+
+.right_navigation .right_navigation_item a .s_txt {
+    font-size: 12px;
+    width: 20px
+}
+
+.right_navigation .right_navigation_item:hover {
+    background: red
+}
+
+.right_navigation .right_navigation_item:hover a {
+    border-bottom: 1px solid red
+}
+
+.right_navigation .my_sort a .s_icon {
+    background-position: -271px -129px
+}
+
+.right_navigation .my_sale a .s_icon {
+    background-position: -271px -159px
+}
+
+.right_navigation .my_wallet a .s_icon {
+    background-position: -271px -219px
+}
+
+.right_navigation .my_distance a .s_icon {
+    background-position: -271px -189px
+}
+
+.right_navigation .right_navigation_qr_icon {
+    position: relative;
+    padding: 4px 4px 0;
+    text-align: center;
+    background: #202020
+}
+
+.right_navigation .right_navigation_qr_icon a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+    padding-bottom: 12px
+}
+
+.right_navigation .right_navigation_qr_icon a .qr_icon {
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url(https://s10.mogucdn.com/mlcdn/c45406/180521_8d03604744igdgagjk7iggg44lkeb_16x16.png) center no-repeat;
+    margin-top: 7px;
+    margin-left: 3px
+}
+
+.right_navigation .right_navigation_qr_icon .detail_qrLogo {
+    display: none;
+    position: absolute;
+    width: 181px;
+    height: 200px;
+    left: -176px;
+    top: -13px
+}
+
+.right_navigation .right_navigation_qr_icon:hover .detail_qrLogo {
+    display: block
+}
+
+.right_navigation .sideBottom {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    z-index: 1000
+}
+
+.right_navigation .sideBottom .sidebar-item {
+    background: #202020;
+    cursor: pointer;
+    border-top: 1px solid #999999;
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.right_navigation .sideBottom .sidebar-item a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+    padding-bottom: 12px
+}
+
+.right_navigation .sideBottom .sidebar-item a .s_icon {
+    background: url("../img/spirit.png") no-repeat;
+    background-position: -5px;
+    width: 30px;
+    height: 30px;
+    display: block
+}
+
+.right_navigation .sideBottom .sidebar-item:hover {
+    background: #ff0000;
+    border-top: 1px solid #ff0000
+}
+
+.right_navigation .sideBottom .mgj-back2top a .s_icon {
+    background-position: -267px -273px
+}

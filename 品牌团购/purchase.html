@@ -5,6 +5,7 @@
     <title>品牌团购</title>
     <link rel="icon" href="img/title.ico">
     <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/right_navigation.css">
     <link rel="stylesheet" href="css/purchase.css">
 </head>
 <body>
@@ -450,56 +451,52 @@
 
 </div>
 
-<div id="fixed">
-    <div class="margin-fixed" id="margin-fixed">
-        <div class="height-fixed">
-            <div class="border-fixed-1">
-                <a href="" class="GD-bg1">
-                    <img src="img/MGJ-XBT56_03.png" alt="" class="img-margin-fixed">
-                    <div>购物车</div>
-                </a>
-            </div>
-        </div>
-        <div class="height-fixed">
-            <div class="border-fixed-1">
-                <a href="" class="GD-bg2">
-                    <img src="img/MGJ-XBT3333_03.png" alt="">
-                    <div>优惠券</div>
-                </a>
-            </div>
-        </div>
-        <div class="height-fixed padding-fixed">
-            <div class="border-fixed-1">
-                <a href="" class="GD-bg3">
-                    <img src="img/MGJ-XBT57_09.png" alt="">
-                    <div id="fixed-padding-price">钱包</div>
-                </a>
-            </div>
-        </div>
-        <div class="height-fixed padding-fixed">
-            <div class="border-fixed-1">
-                <a href="" class="GD-bg4">
-                    <img src="img/MGJ-XBT56_06.png" alt="">
-                    <div>足迹</div>
-                </a>
-            </div>
-        </div>
-        <span>
-                <a href="" class="GD-bg5">
-                    <img src="img/MGJ-XBT-99..png" alt="">
-                </a>
-                <div>
-                    <img src="img/123-123.png" alt="">
-                </div>
-        </span>
-        <div class="fixed-top">
-            <div>
-                <a href="">
-                    <img src="img/MGJ-XBT_fixed-top_01_02.png" alt="">
-                </a>
-            </div>
+<div class="right_navigation">
+    <div class="right_navigation_blank"></div>
+    <div class="right_navigation_item my_sort">
+        <a href="../登录/enter.html">
+            <i class="s_icon"></i>
+            <div class="s_txt">购物车</div>
+        </a>
+    </div>
+    <div class="right_navigation_item my_sale">
+        <a href="../登录/enter.html">
+            <i class="s_icon"></i>
+            <div class="s_txt">优惠卷</div>
+        </a>
+    </div>
+    <div class="right_navigation_item my_wallet">
+        <a href="../登录/enter.html">
+            <i class="s_icon"></i>
+            <div class="s_txt">钱包</div>
+        </a>
+
+    </div>
+    <div class="right_navigation_item my_distance">
+        <a href="../登录/enter.html">
+            <i class="s_icon"></i>
+            <div class="s_txt">足迹</div>
+        </a>
+    </div>
+    <div class="right_navigation_qr_icon ">
+        <a href="../登录/enter.html" target="_blank">
+            <i class="qr_icon"></i>
+        </a>
+        <div class="detail_qrLogo">
+            <img src="img/123-123.png" alt="">
         </div>
     </div>
+
+    <div class="sideBottom">
+        <!--回到顶部-->
+        <div class="sidebar-item mgj-back2top" >
+            <a rel="nofollow" href="javascript:;">
+                <i class="s_icon"></i>
+            </a>
+        </div>
+    </div>
+
+
 </div>
 </body>
 </html>
@@ -545,21 +542,22 @@
 <script src="js/selectedGoods.js"></script>
 <script src="js/utils.js"></script>
 <script>
-    let fixedtop = document.querySelector('.fixed-top');
-    let marginfixed=document.getElementById('margin-fixed');
-    let winH=document.documentElement.clientHeight||document.body.clientHeight;
-    fixedtop.onclick = function () {
-        let winScroll = util.win('scrollTop');
-        this.timer = setInterval(() => {
-            winScroll -= 100;
-            if (winScroll <= 0) {
-                clearInterval(this.timer);
-                util.win('scrollTop', 0);
-                return;
+    function sideBottomUp() {
+        let $sideBottom=$('.sideBottom');
+        $(window).scroll(function () {
+            let T = $(window).scrollTop();
+            if(T>0){
+                $sideBottom.css({display:'block'})
             }
-            util.win('scrollTop', winScroll);
-            bok = false;
-        }, 17);
-    };
-    marginfixed.style.marginTop=winH/8+'px'
+
+            if(T<=2){
+                $sideBottom.css({display:"none"});
+            }
+        });
+        $sideBottom.on('click',function () {
+            $('html , body').animate({scrollTop: 0});
+
+        })
+    }
+    sideBottomUp();
 </script>

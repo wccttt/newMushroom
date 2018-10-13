@@ -605,6 +605,53 @@
 
     </div>
 </div>
+<div class="right_navigation">
+    <div class="right_navigation_blank"></div>
+    <div class="right_navigation_item my_sort">
+        <a href="../登录/enter.html">
+            <i class="s_icon"></i>
+            <div class="s_txt">购物车</div>
+        </a>
+    </div>
+    <div class="right_navigation_item my_sale">
+        <a href="../登录/enter.html">
+            <i class="s_icon"></i>
+            <div class="s_txt">优惠卷</div>
+        </a>
+    </div>
+    <div class="right_navigation_item my_wallet">
+        <a href="../登录/enter.html">
+            <i class="s_icon"></i>
+            <div class="s_txt">钱包</div>
+        </a>
+
+    </div>
+    <div class="right_navigation_item my_distance">
+        <a href="../登录/enter.html">
+            <i class="s_icon"></i>
+            <div class="s_txt">足迹</div>
+        </a>
+    </div>
+    <div class="right_navigation_qr_icon ">
+        <a href="../登录/enter.html" target="_blank">
+            <i class="qr_icon"></i>
+        </a>
+        <div class="detail_qrLogo">
+            <img src="img/123-123.png" alt="">
+        </div>
+    </div>
+
+    <div class="sideBottom">
+        <!--回到顶部-->
+        <div class="sidebar-item mgj-back2top" >
+            <a rel="nofollow" href="javascript:;">
+                <i class="s_icon"></i>
+            </a>
+        </div>
+    </div>
+
+
+</div>
 </body>
 </html>
 <script src="js/jquery-1.11.3.js"></script>
@@ -612,10 +659,25 @@
 <script src="js/utils.js"></script>
 <script src="js/index.js"></script>
 <script type="text/javascript" charset="UTF-8">
-    window.onload = function () {
-        $search.init();
-        $goodsSort.init();
-    }
+    function sideBottomUp() {
+        let $sideBottom=$('.sideBottom');
+        $(window).scroll(function () {
+            let T = $(window).scrollTop();
 
+            if(T>0){
+                $sideBottom.css({display:'block'})
+            }
+
+            if(T<=2){
+                $sideBottom.css({display:"none"});
+
+            }
+        });
+        $sideBottom.on('click',function () {
+            $('html , body').animate({scrollTop: 0});
+
+        })
+    }
+    sideBottomUp();
 
 </script>
